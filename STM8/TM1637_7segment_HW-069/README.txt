@@ -16,4 +16,4 @@ GRID1-4: From left to right. Can be either OFF or takes number from 0-9 displayi
 Best used when displaying single variable in range of 0-9999.
 
 COLON: Same as above
-x: any number from 0-9999 will be displayed correspondingly
+x: any number from 0-9999 will be displayed correspondingly. if number of digits is less than 4, empty grids will be left from left side.
