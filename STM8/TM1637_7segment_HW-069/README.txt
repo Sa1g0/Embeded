@@ -6,7 +6,7 @@ Use either or both of below functions to drive display:
 
 1. display_by_segment(char COLON, char GRID1, char GRID2, char GRID3, char GRID4)
 
-Best used when input is single variable for each grid or there is a need to ommit some grids in between. 
+Best used when input is single variable for each grid, there is a need to ommit some grids in between or sign other than 0-9 digit will be display. 
 
 COLON: ON or OFF as HW-069 comes with colon between 2'nd and 3'rd grid for time based operations.
 GRID1-4: From left to right. Can be either OFF or takes number from 0-9 displaying correspondingly. Numbers from 90 up represents special characters found in translate() function.
