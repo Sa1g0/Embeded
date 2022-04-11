@@ -20,15 +20,17 @@ void main(void)
 	while(TRUE)
 	{
 		/*Some demo code*/
-			for(i; i <= 9999; i+=4)
+			for(i; i <= 2000; i+=4)
 			{
-				if(i%100 == 0)
+				if(i%64 == 0)
 				j = OFF;
-				if(i%99 == 0)
+				if(i%48== 0)
 				j = ON;
 				display_string(j, i);
-				delay_ms(1);
+				delay_ms(50);
 			}
+			display_by_segment(OFF, OFF, OFF, OFF, OFF);
+				delay_ms(300);
 			i=0;
 			for(i; i <= 10; i++)
 			{
@@ -42,11 +44,11 @@ void main(void)
 			{
 				display_by_segment(OFF, 1, OFF, OFF, OFF);
 				delay_ms(200);
-				display_by_segment(OFF, OFF, 1, OFF, OFF);
+				display_by_segment(OFF, OFF, 2, OFF, OFF);
 				delay_ms(200);
-				display_by_segment(OFF, OFF, OFF, 1, OFF);
+				display_by_segment(OFF, OFF, OFF, 3, OFF);
 				delay_ms(200);
-				display_by_segment(OFF, OFF, OFF, OFF, 1);
+				display_by_segment(OFF, OFF, OFF, OFF, 4);
 				delay_ms(200);
 			}
 			i=0;
